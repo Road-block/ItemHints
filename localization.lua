@@ -1,0 +1,28 @@
+
+local L = AceLibrary("AceLocale-2.2"):new("ItemHints")
+L:RegisterTranslations("enUS", function() return {
+  ["Activate/Suspend 'Item Hints'"] = true,
+  ["Active"] = true,
+  ["Add item to Custom"] = true,
+  ["Add"] = true,
+  ["Custom"] = true,
+  ["Enable"] = true,
+  ["Favorite"] = true,
+  ["GearSet"] = true,
+  ["Hide minimap icon"] = true,
+  ["Item Hints"] = true,
+  ["Manage Custom Hints"] = true,
+  ["Remove item from Custom"] = true,
+  ["Remove"] = true,
+  ["Right-click for Options"] = true,
+  ["Show Custom Hint"] = true,
+  ["Show Favorite Hint (requires pfQuest)"] = true,
+  ["Show GearSet Hint (requires ItemRack or Outfitter)"] = true,
+  ["Show WishList Hint (requires AtlasLoot)"] = true,
+  ["WishList"] = true,
+  ["|cff00FFFFFavorite|r"] = true,
+  ["|cffDC143CCustom|r"] = true,
+  ["|cffFF69B4WishList|r"] = true,
+  ["|cffFF8C00GearSets:|r %s"] = true,
+  ["|cffFF8C00Hint: %s"] = true,
+} end)

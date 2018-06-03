@@ -1,0 +1,29 @@
+## Interface: 11200
+## Author: Roadblock
+## X-Website: https://github.com/Road-block/ItemHints/releases/latest
+## X-Category: Inventory
+## Version: 1.0
+## Title: Item Hints
+## Notes: Tooltip notes for interesting items.
+## OptionalDeps: Ace2, FuBar, FuBarPlugin-2.0, Deformat, TabletLib, DewdropLib, AtlasLoot, pfQuest, ItemRack, Outfitter
+## SavedVariables: ItemHintsDB
+
+# Libs Core
+Libs\AceLibrary\AceLibrary.lua
+Libs\AceOO-2.0\AceOO-2.0.lua
+Libs\AceConsole-2.0\AceConsole-2.0.lua
+Libs\AceEvent-2.0\AceEvent-2.0.lua
+Libs\AceDB-2.0\AceDB-2.0.lua
+Libs\AceAddon-2.0\AceAddon-2.0.lua
+Libs\AceHook-2.1\AceHook-2.1.lua
+Libs\AceLocale-2.2\AceLocale-2.2.lua
+# Libs Extra
+Libs\Babble-Spell-2.2\Babble-Spell-2.2.lua
+Libs\Deformat-2.0\Deformat-2.0.lua
+Libs\Gratuity-2.0\Gratuity-2.0.lua
+Libs\Dewdrop-2.0\Dewdrop-2.0.lua
+Libs\Tablet-2.0\Tablet-2.0.lua
+Libs\FuBarPlugin-2.0\FuBarPlugin-2.0.lua
+# Main Files
+localization.lua
+core.lua
