@@ -309,7 +309,9 @@ function ItemHints:TipHook()
   end)
   self:SecureHook(GameTooltip, "SetBagItem", function(this, bag, slot)
     local itemLink = GetContainerItemLink(bag, slot)
-    ItemHints:AddDataToTooltip(GameTooltip, itemLink)
+    if (itemLink) then
+      ItemHints:AddDataToTooltip(GameTooltip, itemLink)
+    end
   end
   )
   self:SecureHook(GameTooltip, "SetLootItem", function(this, slot)
@@ -334,6 +336,15 @@ function ItemHints:TipHook()
   )
   self:SecureHook(GameTooltip, "SetQuestLogItem", function(this, type, id)
     ItemHints:AddDataToTooltip(GameTooltip, GetQuestLogItemLink(type, id))
+  end
+  )
+  self:SecureHook(GameTooltip, "SetInventoryItem", function(this, unit, slot, nameOnly)
+    if unit == "player" and slot > 39 then -- bank item slot
+      local itemLink = GetInventoryItemLink("player",slot)
+      if (itemLink) then
+        ItemHints:AddDataToTooltip(GameTooltip, itemLink)
+      end
+    end
   end
   )
   self:HookScript(GameTooltip, "OnHide", function()

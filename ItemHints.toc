@@ -2,7 +2,7 @@
 ## Author: Roadblock
 ## X-Website: https://github.com/Road-block/ItemHints/releases/latest
 ## X-Category: Inventory
-## Version: 1.0
+## Version: 1.1
 ## Title: Item Hints
 ## Notes: Tooltip notes for interesting items.
 ## OptionalDeps: Ace2, FuBar, FuBarPlugin-2.0, Deformat, TabletLib, DewdropLib, AtlasLoot, pfQuest, ItemRack, Outfitter
