@@ -546,6 +546,6 @@ end
 function ItemHints:ADDON_LOADED()
   self:OptDepInit()
   if (pfUI) and pfUI.api and pfUI.api.CreateBackdrop and pfUI_config and pfUI_config.tooltip and pfUI_config.tooltip.alpha then
-    pfUI.api.CreateBackdrop(ItemHints.extratip,nil,nil,pfUI_config.tooltip.alpha)
+    pfUI.api.CreateBackdrop(ItemHints.extratip,nil,nil,tonumber(pfUI_config.tooltip.alpha))
   end
 end
